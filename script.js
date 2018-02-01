@@ -13,6 +13,8 @@
     var messageEl = document.getElementById("message");
     var messageE2 = document.getElementById("message2");
     var name = document.getElementById("name");
+    var quitter = document.getElementById("quitter");
+
 
     var userHeals = document.getElementById("userHeals");
 
@@ -49,7 +51,7 @@
         
         startButton.style.display = 'none';
         startGame.classList.remove("main"); 
-        updateName(user.name);
+        updateName("Name: " + user.name);
 
 
 
@@ -118,13 +120,12 @@
     };
 
     quitButton.onclick = function(){
-
-
-        updateMessage("GAME OVER YOU QUIT");
-        updateMessage1("");
-        quitButton.style.display = 'none';
-        startGame.classList.add("main");
-                   
+    
+      if(user.health > 0 && computer.health > 0){
+       gameOver("GAME OVER YOU QUIT! BE GONE!");
+       quitButton.style.display = 'none';
+       startGame.classList.add("main");
+                   }
 
     };
 
@@ -155,6 +156,10 @@
 
     function updateName(newMessage) {
         name.innerText = newMessage;
+    }
+
+    function gameOver(newMessage) {
+        quitter.innerText = newMessage;
     }
 
 })();
