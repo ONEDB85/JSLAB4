@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+
+<body>
+
+	<button id="startButton">Start Game</button><br><br>
+	<div id="hidden" class="main">
+	    <main>
+	    	<div id ="buttons">
+		        <button id="attackButton">Attack</button>
+		        <button id="healButton">Heal</button>
+		        <button id="quitButton">Quit</button>
+	        </div>
+
+	        <p id="message"></p>
+	        <p id="message2"></p>
+	        
+	    <div id="quit">
+	        <h1>Player Stats</h1>
+	        <p>Name</p>
+	        <p id="name"></p>
+
+	      
+
+	     	<p>Health</p>
+	        <progress id="userHealth" value="40" max="40"></progress>
+
+	        <p>Heal Count</p>
+	        <progress id="userHeals" value="2" max="2"></progress>
+
+	        <p>Wins</p>
+	        <progress id="userWins" value="0" max="5"></progress>
+	     
+
+
+	        <h1>Enemy Stats</h1>
+
+	        <p>Name</p>
+	        <p>Grant</p>
+	        <progress id="computerHealth" value="10" max="10"></progress>
+	    </div>
+	    </main>
+	</div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

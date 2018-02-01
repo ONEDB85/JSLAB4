@@ -1,0 +1,28 @@
+
+body{
+
+background-color: blue;
+text-align: center;
+}
+
+#buttons{
+
+
+
+}
+
+
+.main{
+
+display: none;
+
+}
+
+
+#quit{
+border: 2px black solid; 
+margin: 0, auto;
+padding: -10px 10px 10px 10px;
+
+
+}
