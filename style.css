@@ -1,14 +1,8 @@
 
 body{
 
-background-color: blue;
+background-color: #6699ff;
 text-align: center;
-}
-
-#buttons{
-
-
-
 }
 
 
@@ -18,11 +12,94 @@ display: none;
 
 }
 
+.beGone{
+display: none;
+
+	
+}
+
+
+
 
 #quit{
 border: 2px black solid; 
 margin: 0, auto;
 padding: -10px 10px 10px 10px;
 
+}
+
+.start{
+
+height: 50px;
+width: 130px;
+color:blue;
+background-color: #e0ebeb;
+border:2px inset #ffe6cc;
+font-weight: bold;
+font-size: 20px;
+}
+
+
+
+.start:hover, .button:hover {
+	background-color: black;
+}
+
+.topButtons{
+
+	display: flex;
+	justify-content: center;
+}
+
+.button{
+	font-weight: bold;
+	font-size: 20px;
+	color: blue;
+	background-color: #b3b300;
+	margin: 0px 10px;
+	width: 100px;
+}
+
+.userContainer{
+	display: flex;
+	justify-content: center;
+}
+
+.userStats{
+	margin: 0px 10px;
+}
+
+progress{
+
+	background-color: red;
 
 }
+
+.statWords{
+
+font-weight: bold;
+font-size: 18px;
+
+}
+
+.info{
+
+color:#333300;	
+
+font-weight: bold;
+font-size: 18px;
+}
+
+.quitter{
+
+color:#333300;	
+font-weight: bold;
+font-size: 35px;
+
+}
+
+img{
+	height: 450px;
+	border:3px solid black;
+}
+

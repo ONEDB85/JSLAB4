@@ -10,49 +10,45 @@
 </head>
 
 <body>
-
-	<button id="startButton">Start Game</button><br><br>
-	<p id="quitter"></p>
-
-
-	<div id="hidden" class="main">
-	    <main>
-	    	<div id ="buttons">
-		        <button id="attackButton">Attack</button>
-		        <button id="healButton">Heal</button>
-		        <button id="quitButton">Quit</button>
-	        </div>
-
-	        <p id="message"></p>
-	        <p id="message2"></p>
-	        
-	    <div id="quit">
-	        <h1>Player Stats</h1>
-	        <p id="name"></p>
-
-	      
-
-	     	<p>Health</p>
-	        <progress id="userHealth" value="40" max="40"></progress>
-
-	        <p>Heal Count</p>
-	        <progress id="userHeals" value="2" max="2"></progress>
-
-	        <p>Wins</p>
-	        <progress id="userWins" value="0" max="5"></progress>
-	     
-
-
-	        <h1>Enemy Stats</h1>
-
-	        <p>Name: Grant</p>
-	        <p>Health</p>
-	        <progress id="computerHealth" value="10" max="10"></progress>
-	    </div>
-	    </main>
-	</div>
-
-
+    <div id="startButton">
+        <button class="start">Start Game</button>
+        <h2>Enter a game where you must beat Grant the Chicken 5 times to win. Good luck chump.</h2>
+    </div>
+    <p class="quitter" id="quitter"></p>
+    <img src="samurai.png" id="samurai" class="beGone">
+    <div id="hidden" class="main">
+        <main>
+            <div class="topButtons" id="buttons">
+                <button class="button" id="attackButton">Attack</button>
+                <button class="button" id="healButton">Heal</button>
+                <button class="button" id="quitButton">Quit</button>
+            </div>
+            <p class="info" id="message"></p>
+            <p class="info" id="message2"></p>
+            <div id="quit">
+                <h1>Player Stats</h1>
+                <p class= "info" id="name"></p>
+                <div class="userContainer">
+                    <div class="userStats">
+                        <p class="statWords">Health</p>
+                        <progress id="userHealth" value="40" max="40"></progress>
+                    </div>
+                    <div class="userStats">
+                        <p class="statWords">Heal Count</p>
+                        <progress id="userHeals" value="2" max="2"></progress>
+                    </div>
+                    <div class="userStats">
+                        <p class="statWords">Wins</p>
+                        <progress id="userWins" value="0" max="5"></progress>
+                    </div>
+                </div>
+                <h1>Enemy Stats</h1>
+                <p class="statWords">Name: Grant the Almighty Chicken</p>
+                <p class="statWords">Health</p>
+                <progress id="computerHealth" value="10" max="10"></progress>
+            </div>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 
